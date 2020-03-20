@@ -1,15 +1,15 @@
 {
-  "name": "google-maps-react",
-  "version": "2.0.3",
+  "name": "@ewilder/google-maps-react",
+  "version": "1.0.0",
   "description": "Google maps container",
-  "author": "Fullstack.io <us@fullstack.io>",
+  "author": "Erin Wilder <erinwilder1@gmail.com> (https://github.com/erinwilder/)",
   "license": "MIT",
   "options": {
     "mocha": "--require scripts/mocha_runner -t rewireify src/**/__tests__/**/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fullstackreact/google-maps-react.git"
+    "url": "git+https://github.com/ewilder/google-maps-react.git"
   },
   "main": "dist/index.js",
   "files": [
@@ -18,7 +18,7 @@
   ],
   "types": "index.d.ts",
   "scripts": {
-    "prepublish": "./scripts/prepublish.sh",
+    "prepare": "./scripts/prepublish.sh",
     "preversion": ". ./scripts/prepublish.sh",
     "dev": "NODE_ENV=development ./node_modules/hjs-webpack/bin/hjs-dev-server.js",
     "build": "NODE_ENV=production webpack",
@@ -47,22 +47,23 @@
     "babel-runtime": "^6.6.1",
     "chai": "^3.5.0",
     "chai-spies": "^0.7.1",
-    "css-loader": "^0.23.1",
-    "cssnano": "^3.5.2",
+    "cryptiles": "^4.1.2",
+    "css-loader": "^3.4.2",
+    "cssnano": "^4.1.10",
     "dotenv": "^2.0.0",
     "enzyme": "^2.2.0",
     "eslint": "^2.7.0",
     "eslint-plugin-babel": "^3.1.0",
     "eslint-plugin-react": "^5.1.1",
     "file-loader": "^0.8.5",
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^2.2.0",
     "highlight.js": "^9.3.0",
     "history": "^3.0.0",
-    "hjs-webpack": "^8.1.0",
+    "hjs-webpack": "^9.2.0",
     "jsdom": "^9.2.1",
-    "marked": "^0.3.17",
-    "mocha": "^2.4.5",
-    "nodemon": "^1.9.1",
+    "marked": "^0.8.1",
+    "mocha": "^7.1.1",
+    "nodemon": "^2.0.2",
     "npm-font-open-sans": "0.0.3",
     "postcss-loader": "^0.9.1",
     "precss": "^1.4.0",
@@ -74,12 +75,24 @@
     "react-router-dom": "^4.2.2",
     "sinon": "^1.17.3",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.13.0"
+    "url-loader": "^4.0.0",
+    "webpack": "^4.42.0"
   },
   "peerDependencies": {
     "react": "~0.14.8 || ^15.0.0 || ^16.0.0",
     "react-dom": "~0.14.8 || ^15.0.0 || ^16.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "keywords": [
+    "google",
+    "maps",
+    "react"
+  ],
+  "bugs": {
+    "url": "https://github.com/ewilder/google-maps-react/issues"
+  },
+  "homepage": "https://github.com/ewilder/google-maps-react#readme",
+  "directories": {
+    "example": "examples"
+  }
 }
